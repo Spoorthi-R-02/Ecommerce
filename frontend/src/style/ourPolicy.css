@@ -1,0 +1,62 @@
+/* Container for the policy section */
+.our-policy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+  border-top: 3px solid #1e3a8a;
+  border-bottom: 3px solid #1e3a8a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 640px) {
+  .our-policy-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 3rem;
+  }
+}
+
+/* Each individual policy card */
+.policy-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon style */
+.policy-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Title style */
+.policy-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+/* Description style */
+.policy-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
